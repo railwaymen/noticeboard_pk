@@ -22,3 +22,6 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 
 gem 'twitter-bootstrap-rails'
+
+gem 'devise'
+gem 'omniauth-facebook'
