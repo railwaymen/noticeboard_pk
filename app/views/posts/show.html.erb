@@ -10,6 +10,10 @@
   <dd><%= @post.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
   <dd><%= @post.content %></dd>
+  <% if @post.address.present? %>
+    <dt><strong>Location:</strong></dt>
+    <dd><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@post.latitude} #{@post.longitude}" %></dd>
+  <% end %>
 </dl>
 
 <div class="form-actions">

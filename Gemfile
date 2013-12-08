@@ -25,3 +25,4 @@ gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'geocoder'
