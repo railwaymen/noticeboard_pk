@@ -47,7 +47,7 @@
           <a class="brand" href="/">Noticeboard</a>
           <div class="container nav-collapse">
             <% if signed_in? %>
-              <p>
+              <p class="navbar-text pull-right">
                 You are signed in as <%= current_user.name %>
                 (<%= link_to "sign out", destroy_user_session_path, method: :delete %>)
               </p>
